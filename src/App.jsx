@@ -1,121 +1,148 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="min-h-screen bg-gray-950 text-gray-300 font-mono selection:bg-green-500 selection:text-black">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 border-b border-gray-800 bg-gray-950/80 backdrop-blur-md p-5">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <span className="text-green-400 font-bold text-xl tracking-tighter">
+            ~/sausage-dog
+          </span>
+          <div className="space-x-8 text-sm hidden md:block">
+            <a href="#about" className="hover:text-green-400 transition-colors">
+              ./about
+            </a>
+            <a
+              href="#projects"
+              className="hover:text-green-400 transition-colors"
+            >
+              ./projects
+            </a>
+            <a
+              href="#contact"
+              className="hover:text-green-400 transition-colors"
+            >
+              ./contact
+            </a>
+          </div>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </nav>
 
-      <div className="ticks"></div>
+      <main className="max-w-6xl mx-auto p-6 md:p-12">
+        {/* Terminal / Hero Section */}
+        <section id="about" className="py-12">
+          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 shadow-2xl">
+            {/* Terminal Window Controls */}
+            <div className="flex gap-2 mb-6">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            {/* Terminal Content */}
+            <div className="space-y-4 text-sm md:text-base">
+              <p>
+                <span className="text-green-400">sausage-dog@portfolio</span>:
+                <span className="text-blue-400">~</span>$ whoami
+              </p>
+              <div className="flex flex-row w-ful">
+                <div className="flex flex-col gap-y-8 w-full">
+                  <h1 className="text-gray-100 text-2xl md:text-4xl font-bold mt-2">
+                    Hi, I'm{" "}
+                    <span className="underline bg-gradient-to-r to-green-700">
+                      Sausage Dog
+                    </span>
+                    .
+                  </h1>
+                  <img
+                    src="./src/assets/pfp-github.jpg"
+                    alt="Avatar"
+                    class="w-80 h-80 rounded-full object-cover"
+                  />
+                </div>
+                <p className="my-48 text-gray-400 leading-relaxed max-w-2xl">
+                  I am sausage dog. I love eating sausages. Me drive sausage
+                  car. Vroom vroom. Here I go. Yahoo. Wee. Vroom. Go go. Sausage
+                  car fast. Vroom.
+                </p>
+              </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+              <p className="mt-6">
+                <span className="text-green-400">sausage-dog@portfolio</span>:
+                <span className="text-blue-400">~</span>$ dog skills.json
+              </p>
+              <p className="text-yellow-300">
+                ["C++", "C", "Python", "Javascript"]
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="py-16">
+          <h2 className="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-2 flex items-center gap-2">
+            <span className="text-green-400">#</span> Featured_Builds
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Project 1 */}
+            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
+              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
+                Sausage Dog Racing Simulator
+              </h3>
+              <p className="text-sm text-gray-400 mb-6">
+                Drive in sausage car and destroy your enemies with your wrath.
+              </p>
+              <div className="flex gap-2 text-xs text-gray-500">
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  Assembly
+                </span>
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  Warm-up
+                </span>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
+              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
+                Dog Sunbathing
+              </h3>
+              <p className="text-sm text-gray-400 mb-6">
+                Dog under the sun bathing. Nice sunglasses. Maybe dog should
+                jump in pool.
+              </p>
+              <div className="flex gap-2 text-xs text-gray-500">
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  Malbolge
+                </span>
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  Fun
+                </span>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
+              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
+                Garfield
+              </h3>
+              <p className="text-sm text-gray-400 mb-6">Cat.</p>
+              <div className="flex gap-2 text-xs text-gray-500">
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  C
+                </span>
+                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
+                  Cat
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
 
