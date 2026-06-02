@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    /* Tailwind's default is 16px.. */
+    font-size: 20px;
+  }
+}

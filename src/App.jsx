@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-300 font-mono selection:bg-green-500 selection:text-black">
+    <div className="min-h-screen bg-gradient-to-r from-zinc-900 to-slate-900 text-gray-300 font-mono selection:bg-green-500 selection:text-black">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b border-gray-800 bg-gray-950/80 backdrop-blur-md p-5">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -33,7 +33,7 @@ function App() {
       <main className="max-w-5xl mx-auto p-6 md:p-12">
         {/* Terminal / Hero Section */}
         <section id="about" className="py-12">
-          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 shadow-2xl">
+          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 shadow-xl/50">
             {/* Terminal Window Controls */}
             <div className="flex gap-2 mb-6">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -56,9 +56,9 @@ function App() {
                     </span>
                   </h1>
                   <img
-                    src="./src/assets/pfp-github.jpg"
+                    src="./sausage-dog-portfolio/src/assets/pfp-github.jpg"
                     alt="Avatar"
-                    class="w-80 h-80 rounded-full object-cover"
+                    class="w-80 h-80 rounded-full object-cover shadow-xl/2 md:hover:rotate-360 transition-transform duration-5000"
                   />
                 </div>
                 <p className="my-42 text-gray-400 leading-relaxed max-w-2xl">
