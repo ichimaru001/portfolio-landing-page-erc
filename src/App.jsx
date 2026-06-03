@@ -8,7 +8,7 @@ function App() {
       <nav className="sticky top-0 z-50 border-b border-gray-800 bg-gray-950/80 backdrop-blur-md p-5">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <span className="text-green-400 font-bold text-xl tracking-tighter">
-            ~/sausage-dog
+            ~/ichimaru001
           </span>
           <div className="space-x-8 text-sm hidden md:block">
             <a href="#about" className="hover:text-green-400 transition-colors">
@@ -44,7 +44,7 @@ function App() {
             {/* Terminal Content */}
             <div className="space-y-4 text-sm md:text-base">
               <p>
-                <span className="text-green-400">sausage-dog@portfolio</span>:
+                <span className="text-green-400">ichimaru001@portfolio</span>:
                 <span className="text-blue-400">~</span>$ whoami
               </p>
               <div className="flex flex-row gap-12 w-ful">
@@ -52,7 +52,7 @@ function App() {
                   <h1 className="text-gray-100 text-2xl md:text-4xl font-bold mt-2">
                     Hi, I'm{" "}
                     <span className="underline bg-gradient-to-r to-green-700">
-                      Sausage Dog.
+                      Ichimaru.
                     </span>
                   </h1>
                   <img
@@ -62,15 +62,15 @@ function App() {
                   />
                 </div>
                 <p className="my-42 text-gray-400 leading-relaxed max-w-2xl">
-                  I am sausage dog. I love eating sausages. Me drive sausage
-                  car. Vroom vroom. Here I go. Yahoo. Wee. Vroom. Go go. Sausage
-                  car fast. Vroom.
+                  My name is Ichimaru Radhiya Mahe. I am an undergraduate
+                  Electronics and Instrumentation student studying in
+                  Universitas Gadjah Mada.
                 </p>
               </div>
 
               <p className="mt-6">
-                <span className="text-green-400">sausage-dog@portfolio</span>:
-                <span className="text-blue-400">~</span>$ dog skills.json
+                <span className="text-green-400">ichimaru001@portfolio</span>:
+                <span className="text-blue-400">~</span>$ skills.json
               </p>
               <p className="text-yellow-300">
                 ["C++", "C", "Python", "Javascript"]
@@ -88,105 +88,67 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project 1 */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Sausage Dog Racing Simulator
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">
-                Drive in sausage car and destroy your enemies with your wrath.
+              <a
+                href="https://github.com/ichimaru001/embedded-sensor-data-logger-simulator"
+                className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400"
+              >
+                embedded-sensor-data-logger-simulator
+              </a>
+              <p className="text-sm text-gray-400 my-4">
+                Command-line simulator to manage and log data from multiple
+                virtual sensors, accurately mimicking embedded system behavior
               </p>
               <div className="flex gap-2 text-xs text-gray-500">
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Assembly
+                  C
                 </span>
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Warm-up
+                  Embedded Systems
                 </span>
               </div>
             </div>
 
             {/* Project 2 */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Dog Sunbathing
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">
-                Dog under the sun bathing. Nice sunglasses. Maybe dog should
-                jump in pool.
+              <a
+                href="https://github.com/ichimaru001/register-map-editor_access-simulator"
+                className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400"
+              >
+                register-map-editor_access-simulator
+              </a>
+              <p className="text-sm text-gray-400 my-4">
+                Command-line interface tool to parse, edit, and simulate
+                interactions with hardware register maps from a text file
               </p>
               <div className="flex gap-2 text-xs text-gray-500">
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Malbolge
+                  Python
                 </span>
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Fun
+                  Registers
                 </span>
               </div>
             </div>
 
             {/* Project 3 */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Garfield
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">Cat.</p>
-              <div className="flex gap-2 text-xs text-gray-500">
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  C
-                </span>
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Cat
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Good Morning
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">
-                Sibuk ngerjain tugas.
+              <a
+                href="https://github.com/ichimaru001/chibot-react-app"
+                className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400"
+              >
+                chibot-react-app
+              </a>
+              <p className="text-sm text-gray-400 my-4">
+                Modern, responsive user interface for a chat application
+                concept, focusing on creating a clean and intuitive user
+                experience
               </p>
               <div className="flex gap-2 text-xs text-gray-500">
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  ELOK
+                  React Vite
                 </span>
                 <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Simaster
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Banana
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">
-                The author put this here because he likes to eat bananas..
-              </p>
-              <div className="flex gap-2 text-xs text-gray-500">
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  C++
-                </span>
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Microarchitecture
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-green-400 hover:-translate-y-1 transition-all duration-300 group">
-              <h3 className="text-xl font-bold text-blue-400 mb-3 group-hover:text-green-400">
-                Hot Wheels
-              </h3>
-              <p className="text-sm text-gray-400 mb-6">
-                Flaming Hot Wheels? Wowie! Come on down to Dog Town to go for a
-                ride in this mystical adventure!
-              </p>
-              <div className="flex gap-2 text-xs text-gray-500">
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  Verilog
-                </span>
-                <span className="bg-gray-800 border border-gray-700 px-2 py-1 rounded">
-                  TempleOS
+                  UI/UX
                 </span>
               </div>
             </div>
@@ -215,7 +177,7 @@ function App() {
                           id="username"
                           name="username"
                           type="text"
-                          placeholder="Not Sausage Dog"
+                          placeholder="Jane Doe"
                           className="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6"
                         />
                       </div>
@@ -234,7 +196,7 @@ function App() {
                           id="username"
                           name="username"
                           type="text"
-                          placeholder="notsausagedog@hotmail.com"
+                          placeholder="JaneDoe@hotmail.com"
                           className="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6"
                         />
                       </div>
@@ -258,7 +220,7 @@ function App() {
                       />
                     </div>
                     <p className="mt-3 text-sm/6 text-gray-400">
-                      Feel free to criticize me but do not impersonate me.
+                      Feel free to send a message!
                     </p>
                   </div>
                 </div>
@@ -268,13 +230,13 @@ function App() {
             <div className="mt-6 flex items-center justify-end gap-x-6">
               <button
                 type="button"
-                className="text-sm/6 font-semibold text-white"
+                className="text-sm/6 font-semibold text-white cursor-pointer"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md cursor-pointer bg-blue-500 hover:bg-blue-700 transition-all duration-200 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Save
               </button>
